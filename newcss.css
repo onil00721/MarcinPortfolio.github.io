@@ -36,7 +36,7 @@ main
 }
 .topnavmenu{
     border-left: 1px dashed black;
-    display: inline-block;
+    float: left;
     height:  70px;
     width:250px;
     line-height: 70px;
@@ -52,6 +52,24 @@ main
 {
     color: #0a2b42;
 }
+
+.subMenu{ 
+    
+    height:  70px;
+    width:250px;
+    line-height: 70px;
+    text-align: center;
+    background-color:#1c74b2;
+    font-size: 22px;
+    z-index: 10;
+   
+}
+
+
+
+
+
+
 h1 
 {
         font-size: 50px;
