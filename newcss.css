@@ -26,6 +26,11 @@ main
       height:  70px;
     
 }
+
+#specialSpace{
+    height: 150px;
+}
+
 #smalltopnav{
     background-color: #1c74b2;
     width:  1018px;;
