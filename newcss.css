@@ -27,9 +27,6 @@ main
     
 }
 
-#specialSpace{
-    height: 150px;
-}
 
 #smalltopnav{
     background-color: #1c74b2;
@@ -58,7 +55,7 @@ main
     color: #0a2b42;
 }
 
-.subMenu{ 
+.subMenu1, .subMenu2, .subMenu3, .subMenu4{ 
     
     height:  70px;
     width:250px;
@@ -67,7 +64,7 @@ main
     background-color:#1c74b2;
     font-size: 22px;
     z-index: 10;
-   
+   display: nne;
 }
 
 
@@ -153,9 +150,11 @@ figcaption:hover
 
 .contentsection1
 {
+    position: relative;
     width:1000px;
     margin-left: auto;      
     margin-right: auto;
+    z-index: -1;
 }
 
 .contentsection2
