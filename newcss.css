@@ -2,6 +2,7 @@ body {
     background-image: url("grey_@2X.png");
   font-family: 'Montserrat', sans-serif;  
     margin: 0;
+    min-width: 250px;
 }
 
 .conteiner {
@@ -10,16 +11,18 @@ body {
     
 }
 
-#menu1,
-#centerMenu {
-    width: 20%;
+#menu1 {
+    width: 25%;
     margin-top: 50px;    
     display: inline-block; 
     background: grey;  
 }
+
 #menu2 {   
-    width: 59%;
-    margin-top: 50px;    
+    width: 64%;
+    margin-top: 50px; 
+    margin-right: 10%;
+    margin-left: 0%;
     display: inline-block; 
     background: grey;     
 }
@@ -27,9 +30,92 @@ body {
 #menu1 img{
     widows: 100px;
     height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#centerMenu p{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 .subMenu{
-    display: inline-block;
+    float:right;
+    margin: 0 20px;
+    font-size: 18px;
 }
+
+
+
+
+
+@media(max-width:1240px){
+    #menu2{
+        margin-right:3vw;
+         margin-left: 0;
+        background: blue;
+        width: 75%;    
+        
+    }
+    #menu1{
+        width: 20%;
+    }
+    .subMenu{
+        margin:0 1vw;
+        font-size: 16px;
+    }    
+    
+}
+
+
+
+
+ @media(max-width:768px){
+    #menu2{
+      
+        margin-left: auto;        
+        background: green;
+        width: 100%; 
+       
+    }
+      .subMenu{ 
+          margin:0 2vw;
+        background: white;
+            margin-right: 10vw ;
+    }    
+    #menu1{      
+        display: none;
+    }
+     #clear{
+         display: none;
+     }
+    
+}
+
+
+
+ @media(max-width:320px){
+     #menu2{     
+        margin-right: vw;
+        background: yellow;
+        width: 100%; 
+       
+    }
+      .subMenu{ 
+          margin:0 4vw;
+        background: white;
+            margin-right: 1vw ;
+    }    
+    #menu1{      
+        display: none;
+    }
+     #clear{
+         display: none;
+     }
+    
+}
+
+ 
+
+  
