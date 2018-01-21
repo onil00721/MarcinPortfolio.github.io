@@ -1,5 +1,35 @@
-body{
+body {
+    background-image: url("grey_@2X.png");
+  font-family: 'Montserrat', sans-serif;  
+    margin: 0;
+}
+
+.conteiner {
     background: grey;
-   }
-  
+ 
     
+}
+
+#menu1,
+#centerMenu {
+    width: 20%;
+    margin-top: 50px;    
+    display: inline-block; 
+    background: grey;  
+}
+#menu2 {   
+    width: 59%;
+    margin-top: 50px;    
+    display: inline-block; 
+    background: grey;     
+}
+
+#menu1 img{
+    widows: 100px;
+    height: 100px;
+}
+
+
+.subMenu{
+    display: inline-block;
+}
