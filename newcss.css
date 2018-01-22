@@ -43,44 +43,68 @@ body {
     float: right;
     margin: 0 20px;
     font-size: 18px;
-    
+
 }
-.subMenu:nth-child(6){
+
+.subMenu:nth-child(6) {
     border-bottom: 4px solid #48cfad;
-    
+
 }
-#downContainer{
-    background: #0000a8;
-    width:100%;
-    height: 250px;
+
+#downContainer {
+    background: #3b3b79;
+    width: 100%;
     bottom: 0px;
     position: absolute;
-    color:#969696;
+    color: #969696;
     text-align: center
 }
-.downOfPage{
-    width: 100%;
-    height: 60px;   
+
+.downOfPage {
+    background: #24245d;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 75px;
+
 }
-.downOfPage:last-child{
-   
+
+.downOfPage:nth-child(2) {
+    line-height: 50px;
+    height: 40px;
+}
+
+.downOfPage:last-child {
     font-size: 50px;
     color: aliceblue;
-    
+
 }
-.downOfPage:last-child:hover{
+
+.downOfPage:last-child:hover {
     font-size: 50px;
     color: #48cfad;
     cursor: pointer;
 }
 
+.socials img {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 50px;
+    height: 50px;
+    
+}
+
+
+
+
+
 
 @media(max-width:1240px) {
     #menu2 {
         margin-right: 3vw;
-        margin-left: 0;        
+        margin-left: 0;
         width: 73%;
-background: blue;
+        background: blue;
     }
     #menu1 {
         width: 15%;
@@ -90,6 +114,12 @@ background: blue;
         margin: 0 1vw;
         font-size: 16px;
     }
+
+    .downOfPage:nth-child(2) {
+        line-height: 25px;        
+    }
+
+
 
 }
 
@@ -101,12 +131,12 @@ background: blue;
 
         margin-left: auto;
         width: 76%;
-background: yellow;
+        background: yellow;
     }
     .subMenu {
         margin: 0 0.1vw;
         margin-right: 4vw;
-        
+
     }
     #menu1 {
         margin-left: 10px;
@@ -114,7 +144,7 @@ background: yellow;
         margin-top: 20px;
     }
     #menu1 img {
-       width:10vw;
+        width: 10vw;
         height: 10vw;
         display: block;
 
@@ -122,6 +152,21 @@ background: yellow;
     #clear {
         display: none;
     }
+    .downOfPage:nth-child(2) {
+        line-height: 15px;
+        font-size: 12px;
+    }
+    
+.socials img {
+    margin-top: 35px;
+    margin-left: 1vw;
+    width: 35px;
+    height: 35px;
+    
+}
+
+    
+    
 
 }
 
@@ -131,7 +176,7 @@ background: yellow;
     #menu2 {
         margin-right: vw;
         width: 100%;
-background: green;
+        background: green;
     }
     .subMenu {
         margin: 0 4vw;
@@ -143,17 +188,25 @@ background: green;
     #clear {
         display: none;
     }
-.downOfPage{
-   
-    width: 100%;
-    height: 62px;   
-    font-size: 6.5vw;
-}
+    .downOfPage {
+
+        width: 100%;
+        height: 62px;
+        font-size: 6.5vw;
+    }
+
+    .downOfPage:last-child {
+        font-size: 30px;
+    }
     
-    .downOfPage:last-child{
-    font-size: 30px;
+       
+.socials img {
+    margin-top: 20px;
+    margin-left: 1vw;
+    width: 35px;
+    height: 35px;
+    
 }
 
-    
-}
 
+}
