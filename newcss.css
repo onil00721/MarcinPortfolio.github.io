@@ -3,13 +3,22 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     min-width: 250px;
+     
+    
+    
+}
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color:black;
+    
 }
 
 .conteiner {
     background: grey;
-
+  
 
 }
+
 
 #menu1 {
     width: 25%;
@@ -46,18 +55,16 @@ body {
 
 }
 
-.subMenu:nth-child(6) {
-    border-bottom: 4px solid #48cfad;
 
-}
 
 #downContainer {
+    margin-top:200px;
     background: #3b3b79;
     width: 100%;
-    bottom: 0px;
-    position: absolute;
+    bottom: 0px;    
     color: #969696;
     text-align: center
+        
 }
 
 .downOfPage {
