@@ -3,7 +3,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     min-width: 250px;
-     
+     color:#71777c;
     
     
 }
@@ -55,6 +55,28 @@ a:link, a:visited, a:active{
 
 }
 
+.mediumContainer{
+    margin: auto;
+    width:70%;
+    background: #97ffcf;
+    text-align: center;
+    font-size: 2.6vw;
+}
+
+.mediumContainer img:nth-child(2){
+    position: relative;
+    left:-600px;
+    bottom: 30px;
+}
+
+.mediumContainer img:nth-child(3){
+    position: relative;
+    left:-860px;    
+}
+
+
+
+
 
 
 #downContainer {
@@ -69,7 +91,7 @@ a:link, a:visited, a:active{
 
 .downOfPage {
     background: #24245d;
-    width: 65%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
     height: 75px;
@@ -111,7 +133,7 @@ a:link, a:visited, a:active{
         margin-right: 3vw;
         margin-left: 0;
         width: 73%;
-        ackground: blue;
+        background: blue;
     }
     #menu1 {
         width: 15%;
@@ -138,7 +160,7 @@ a:link, a:visited, a:active{
 
         margin-left: auto;
         width: 76%;
-        ackground: yellow;
+        background: yellow;
     }
     .subMenu {
         margin: 0 0.1vw;
@@ -158,6 +180,9 @@ a:link, a:visited, a:active{
     }
     #clear {
         display: none;
+    }
+    .mediumContainer{
+        font-size: 20px;
     }
     .downOfPage:nth-child(2) {
         line-height: 15px;
@@ -183,7 +208,7 @@ a:link, a:visited, a:active{
     #menu2 {
         margin-right: vw;
         width: 100%;
-        ackground: green;
+       background: green;
     }
     .subMenu {
         margin: 0 4vw;
