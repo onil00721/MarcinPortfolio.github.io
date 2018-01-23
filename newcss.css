@@ -3,26 +3,23 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     min-width: 250px;
-     color:#71777c;
-    
-    
-}
-a:link, a:visited, a:active{
-    text-decoration: none;
-    color:black;
-    
+    color: #71777c;
+
+
 }
 
-.conteiner {
-    background: grey;
-  
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: black;
 
 }
 
 
 #menu1 {
     width: 25%;
-    margin-top: 50px;
+    margin-top: 10px;
     display: inline-block;
 }
 
@@ -55,24 +52,118 @@ a:link, a:visited, a:active{
 
 }
 
-.mediumContainer{
-    margin: auto;
-    width:70%;
+.mediumContainer {
+    
+    margin: 30px auto;
+    width: 70%;
     background: #97ffcf;
     text-align: center;
     font-size: 2.6vw;
 }
 
-.mediumContainer img:nth-child(2){
+#laptop {
+    display: inline-block;
     position: relative;
-    left:-600px;
-    bottom: 30px;
+    bottom: -40px;
 }
 
-.mediumContainer img:nth-child(3){
-    position: relative;
-    left:-860px;    
+#laptop img {
+    width: 30vw;
+    height: 15vw
 }
+
+#smartphone {
+   position: relative;
+    left: 45px;
+    bottom: -20px;
+    
+    margin-left: 30px;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+#smartphone img {
+    width: 4.5vw;
+    height: 8vw;
+}
+
+#tablet {
+      position: relative;
+    left:-154px;
+    bottom: -80px;
+    display: inline-block;
+}
+
+#tablet img {
+    width: 8vw;
+    height: 13vw;
+}
+
+.smallContainer {
+    background: #969696;
+    width: 22vw;    
+    height: 25vw;
+    border: 10px solid black;
+    border-radius: 25px;
+    display: inline-block;
+
+}
+
+#firstContainer  {
+    width: 20vw;    
+    height: 20vw;
+    margin-right: 5px;
+    line-height: 3vw;
+    margin-top:20px;
+    
+}
+
+.myButton{
+    width: 13vw;
+    height: 2vw;
+    position: relative;
+    top:7vw;
+    left: 8vw;
+    padding: 1vw;
+    line-height: 2vw;  
+     border:  0.1solid #48cfad; 
+      border-radius: 10px;
+    background: linear-gradient(to right, #26e3cd , #098fcb);  
+    color:aliceblue;
+    font-size: 0.5em;
+    text-align: left;    
+    cursor:pointer;
+}
+
+#firstButton{
+     top:1vw;
+}
+.myButton i{
+    display: inline-block;
+    margin-left: 1.8vw;
+}
+
+.myButton:hover{
+     background: linear-gradient(to right, #098fcb, #26e3cd);
+}
+
+.myButton:hover i{
+    color:#3e3e4b;
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -80,13 +171,12 @@ a:link, a:visited, a:active{
 
 
 #downContainer {
-    margin-top:200px;
+    margin-top: 200px;
     background: #3b3b79;
     width: 100%;
-    bottom: 0px;    
+    bottom: 0px;
     color: #969696;
     text-align: center
-        
 }
 
 .downOfPage {
@@ -120,8 +210,25 @@ a:link, a:visited, a:active{
     margin-left: 25px;
     width: 50px;
     height: 50px;
-    
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -145,9 +252,14 @@ a:link, a:visited, a:active{
     }
 
     .downOfPage:nth-child(2) {
-        line-height: 25px;        
+        line-height: 25px;
     }
-
+    .mediumContainer img:nth-child(2) {
+        display: none;
+    }
+    .mediumContainer img:nth-child(3) {
+        display: none;
+    }
 
 
 }
@@ -181,24 +293,24 @@ a:link, a:visited, a:active{
     #clear {
         display: none;
     }
-    .mediumContainer{
+    .mediumContainer {
         font-size: 20px;
     }
     .downOfPage:nth-child(2) {
         line-height: 15px;
         font-size: 12px;
     }
-    
-.socials img {
-    margin-top: 35px;
-    margin-left: 1vw;
-    width: 35px;
-    height: 35px;
-    
-}
 
-    
-    
+    .socials img {
+        margin-top: 35px;
+        margin-left: 1vw;
+        width: 35px;
+        height: 35px;
+
+    }
+
+
+
 
 }
 
@@ -208,7 +320,7 @@ a:link, a:visited, a:active{
     #menu2 {
         margin-right: vw;
         width: 100%;
-       background: green;
+        background: green;
     }
     .subMenu {
         margin: 0 4vw;
@@ -230,15 +342,15 @@ a:link, a:visited, a:active{
     .downOfPage:last-child {
         font-size: 30px;
     }
-    
-       
-.socials img {
-    margin-top: 20px;
-    margin-left: 1vw;
-    width: 35px;
-    height: 35px;
-    
-}
+
+
+    .socials img {
+        margin-top: 20px;
+        margin-left: 1vw;
+        width: 35px;
+        height: 35px;
+
+    }
 
 
 }
