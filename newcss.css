@@ -54,9 +54,8 @@ a:active {
 
 .mediumContainer {
     
-    margin: 30px auto;
-    width: 70%;
-    background: #97ffcf;
+    margin: 50px auto;
+    width: 70%;   
     text-align: center;
     font-size: 2.6vw;
 }
@@ -99,17 +98,26 @@ a:active {
     height: 13vw;
 }
 
+#oneID{
+     background: rgb(242, 242, 242);
+    height: 22vw;
+    border: 0 solid black;
+    border-radius: 30px;
+}
+
 .smallContainer {
-    background: #969696;
-    width: 22vw;    
+    background: rgb(242, 242, 242);
+    width: 18vw;    
     height: 25vw;
-    border: 10px solid black;
+    border: 0 solid black;
     border-radius: 25px;
     display: inline-block;
+    margin: 0 10px;
 
 }
 
 #firstContainer  {
+    background: rgb(242, 242, 242);
     width: 20vw;    
     height: 20vw;
     margin-right: 5px;
@@ -122,8 +130,8 @@ a:active {
     width: 13vw;
     height: 2vw;
     position: relative;
-    top:7vw;
-    left: 8vw;
+    top:5vw;
+    left: 5vw;
     padding: 1vw;
     line-height: 2vw;  
      border:  0.1solid #48cfad; 
@@ -137,6 +145,7 @@ a:active {
 
 #firstButton{
      top:1vw;
+    left: 8vw;
 }
 .myButton i{
     display: inline-block;
