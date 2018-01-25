@@ -114,27 +114,30 @@ a:active {
     display: inline-block;
     margin: 0 15px;
     font-size: 2vw;
-    
+
 
 }
+
 .inSmallContainer {
-    width:15vw;
+    width: 15vw;
     height: 15vw;
     background: white;
     margin: 20px auto 0 auto;
     border: 2px solid rgb(237, 232, 232);
     border-radius: 15vw;
     margin-bottom: 20px;
-        
+
 }
-.inSmallContainer img{
-    width:15vw;
+
+.inSmallContainer img {
+    width: 15vw;
     height: 15vw;
-    }
-#contactImg img{
-    width:13vw;
+}
+
+#contactImg img {
+    width: 13vw;
     height: 13vw;
-    }
+}
 
 #firstContainer {
     background: rgb(242, 242, 242);
@@ -161,6 +164,7 @@ a:active {
     font-size: 1.3vw;
     text-align: left;
     cursor: pointer;
+    text-align: center;
 }
 
 #firstButton {
@@ -171,8 +175,8 @@ a:active {
 .myButton i {
     display: inline-block;
     margin-left: 1.7vw;
-    
-    
+
+
 }
 
 .myButton:hover {
@@ -280,7 +284,7 @@ a:active {
     }
     .subMenu {
         margin: 0 1vw;
-        font-size: 15.9px;
+        font-size: 15.1px;
     }
 
     .downOfPage:nth-child(2) {
@@ -292,19 +296,19 @@ a:active {
     .mediumContainer img:nth-child(3) {
         display: none;
     }
-    #smartphone{
-        left:20px;
+    #smartphone {
+        left: 20px;
     }
-    #tablet{
+    #tablet {
         display: none;
     }
-    .smallContainer{
+    .smallContainer {
         margin: 0 9px;
     }
-    .inSmallContainer{
-        margin:1vw auto;
+    .inSmallContainer {
+        margin: 1vw auto;
     }
-    #firstContainer{
+    #firstContainer {
         margin-right: -40px;
     }
 }
@@ -314,7 +318,6 @@ a:active {
 
 @media(max-width:768px) {
     #menu2 {
-
         margin-left: auto;
         width: 76%;
         background: yellow;
@@ -322,7 +325,6 @@ a:active {
     .subMenu {
         margin: 0 0.1vw;
         margin-right: 4vw;
-
     }
     #menu1 {
         margin-left: 10px;
@@ -333,121 +335,90 @@ a:active {
         width: 10vw;
         height: 10vw;
         display: block;
-
     }
     #clear {
         display: none;
     }
-    .mediumContainer {        
+    .mediumContainer {
         font-size: 20px;
-         margin: 0 auto;
+        margin: 0 auto;
         width: 100%;
     }
-        
-    
     .downOfPage:nth-child(2) {
         line-height: 15px;
         font-size: 12px;
     }
-
     .socials img {
         margin-top: 35px;
         margin-left: 1vw;
         width: 35px;
         height: 35px;
     }
-     .subMenu {
+    .subMenu {
         margin: 0 1vw;
         font-size: 15.8px;
     }
-
-
-    
-    .smallContainer{
+    .smallContainer {
         width: 85%;
         margin: 30px auto;
-        display: block; 
-            font-size: 6vw;
+        display: block;
+        font-size: 6vw;
         line-height: 20vw;
     }
-    
-    .inSmallContainer,.myButton{
-       float:left;
+    .inSmallContainer,
+    .myButton {
+        float: left;
     }
-    
-    .inSmallContainer{
+    .inSmallContainer {
         margin-left: 20px;
-    width:25vw;
-    height: 25vw;
+        width: 25vw;
+        height: 25vw;
     }
-    
-    
-    
-    .inSmallContainer img{
-    width:25vw;
-    height: 25vw;
+    .inSmallContainer img {
+        width: 25vw;
+        height: 25vw;
     }
-    
-    #contactImg img{
-    width:20vw;
-    height: 20vw;
+    #contactImg img {
+        width: 20vw;
+        height: 20vw;
     }
-    
-        
-    #smartphone{
-       display: none;
+    #smartphone {
+        display: none;
     }
-   
-    
-    
-    #firstContainer{
+    #firstContainer {
         margin-right: -40px;
     }
-    
-    #laptop{
+    #laptop {
         bottom: -30px;
-        left:-10px;
+        left: -10px;
         display: inline-block;
-        }
+    }
     #oneID {
         height: 45vw;
     }
-#laptop img {
-    width: 50vw;
-    height: 25vw
-}
-    
-
-#firstContainer {
-    display: inline-block;
-      margin-right: 20px;
-    line-height: 5vw;   
-}
-    .myButton{
-        width: 33vw;
-    height: 5vw;
-        top:-10px;
-        font-size: 4.4vw;
-          line-height: 5vw;
+    #laptop img {
+        width: 50vw;
+        height: 25vw
     }
-    
+    #firstContainer {
+        display: inline-block;
+        margin-right: 20px;
+        line-height: 5vw;
+    }
+    .myButton {
+        width: 33vw;
+        height: 5vw;
+        top: -10px;
+        font-size: 4.4vw;
+        line-height: 5vw;
+    }
     #firstButton {
-    top: 10px;
-    left: -10px;
-}
-    
-    
-    
-    
+        top: 10px;
+        left: -10px;
+    }
     .myButton i {
-    display: none;       
-}
-    
-    
-    
-    
-    
-    
+        display: none;
+    }
 }
 
 
@@ -473,24 +444,25 @@ a:active {
         display: none;
     }
     .downOfPage {
-
         width: 100%;
         height: 62px;
         font-size: 6.5vw;
     }
-
     .downOfPage:last-child {
         font-size: 30px;
     }
-
-
     .socials img {
         margin-top: 20px;
         margin-left: 1vw;
         width: 35px;
         height: 35px;
-
     }
+    .smallContainer {
+       font-size: 5vw;
+        line-height: 15vw;
+    }
+    
+    
 
 
 }
