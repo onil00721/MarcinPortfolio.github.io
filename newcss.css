@@ -113,7 +113,7 @@ a:active {
     border-radius: 25px;
     display: inline-block;
     margin: 0 15px;
-    font-size: 0.8em;
+    font-size: 2vw;
     
 
 }
@@ -158,7 +158,7 @@ a:active {
     border-radius: 10px;
     background: linear-gradient(to right, #26e3cd, #098fcb);
     color: aliceblue;
-    font-size: 0.5em;
+    font-size: 1.3vw;
     text-align: left;
     cursor: pointer;
 }
@@ -170,7 +170,7 @@ a:active {
 
 .myButton i {
     display: inline-block;
-    margin-left: 3.8vw;
+    margin-left: 1.7vw;
     
     
 }
@@ -340,7 +340,11 @@ a:active {
     }
     .mediumContainer {        
         font-size: 20px;
+         margin: 0 auto;
+        width: 100%;
     }
+        
+    
     .downOfPage:nth-child(2) {
         line-height: 15px;
         font-size: 12px;
@@ -358,14 +362,13 @@ a:active {
     }
 
 
-    .mediumContainer {
-        margin: 0 auto;
-        width: 100%;
-    }
+    
     .smallContainer{
         width: 85%;
         margin: 30px auto;
-        display: block            
+        display: block; 
+            font-size: 6vw;
+        line-height: 20vw;
     }
     
     .inSmallContainer,.myButton{
@@ -378,13 +381,19 @@ a:active {
     height: 25vw;
     }
     
+    
+    
     .inSmallContainer img{
     width:25vw;
     height: 25vw;
     }
     
+    #contactImg img{
+    width:20vw;
+    height: 20vw;
+    }
     
-    
+        
     #smartphone{
        display: none;
     }
@@ -395,9 +404,50 @@ a:active {
         margin-right: -40px;
     }
     
+    #laptop{
+        bottom: -30px;
+        left:-10px;
+        display: inline-block;
+        }
+    #oneID {
+        height: 45vw;
+    }
+#laptop img {
+    width: 50vw;
+    height: 25vw
+}
     
 
-
+#firstContainer {
+    display: inline-block;
+      margin-right: 20px;
+    line-height: 5vw;   
+}
+    .myButton{
+        width: 33vw;
+    height: 5vw;
+        top:-10px;
+        font-size: 4.4vw;
+          line-height: 5vw;
+    }
+    
+    #firstButton {
+    top: 10px;
+    left: -10px;
+}
+    
+    
+    
+    
+    .myButton i {
+    display: none;       
+}
+    
+    
+    
+    
+    
+    
 }
 
 
