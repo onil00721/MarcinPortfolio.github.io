@@ -53,9 +53,9 @@ a:active {
 }
 
 .mediumContainer {
-    
+
     margin: 50px auto;
-    width: 70%;   
+    width: 70%;
     text-align: center;
     font-size: 2.6vw;
 }
@@ -72,10 +72,10 @@ a:active {
 }
 
 #smartphone {
-   position: relative;
+    position: relative;
     left: 45px;
     bottom: -20px;
-    
+
     margin-left: 30px;
     margin-bottom: 40px;
     display: inline-block;
@@ -87,8 +87,8 @@ a:active {
 }
 
 #tablet {
-      position: relative;
-    left:-154px;
+    position: relative;
+    left: -154px;
     bottom: -80px;
     display: inline-block;
 }
@@ -98,8 +98,8 @@ a:active {
     height: 13vw;
 }
 
-#oneID{
-     background: rgb(242, 242, 242);
+#oneID {
+    background: rgb(242, 242, 242);
     height: 22vw;
     border: 0 solid black;
     border-radius: 30px;
@@ -107,58 +107,81 @@ a:active {
 
 .smallContainer {
     background: rgb(242, 242, 242);
-    width: 18vw;    
-    height: 25vw;
+    width: 20vw;
+    height: 30vw;
     border: 0 solid black;
     border-radius: 25px;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 15px;
+    font-size: 0.8em;
+    
 
 }
+.inSmallContainer {
+    width:15vw;
+    height: 15vw;
+    background: white;
+    margin: 20px auto 0 auto;
+    border: 2px solid rgb(237, 232, 232);
+    border-radius: 15vw;
+    margin-bottom: 20px;
+        
+}
+.inSmallContainer img{
+    width:15vw;
+    height: 15vw;
+    }
+#contactImg img{
+    width:13vw;
+    height: 13vw;
+    }
 
-#firstContainer  {
+#firstContainer {
     background: rgb(242, 242, 242);
-    width: 20vw;    
-    height: 20vw;
+    width: 20vw;
+    height: 0vw;
     margin-right: 5px;
     line-height: 3vw;
-    margin-top:20px;
-    
+    margin-top: 10px;
+
 }
 
-.myButton{
+.myButton {
     width: 13vw;
     height: 2vw;
     position: relative;
-    top:5vw;
-    left: 5vw;
+    top: 2vw;
+    left: 6.5vw;
     padding: 1vw;
-    line-height: 2vw;  
-     border:  0.1solid #48cfad; 
-      border-radius: 10px;
-    background: linear-gradient(to right, #26e3cd , #098fcb);  
-    color:aliceblue;
+    line-height: 2vw;
+    border: 0.1solid #48cfad;
+    border-radius: 10px;
+    background: linear-gradient(to right, #26e3cd, #098fcb);
+    color: aliceblue;
     font-size: 0.5em;
-    text-align: left;    
-    cursor:pointer;
+    text-align: left;
+    cursor: pointer;
 }
 
-#firstButton{
-     top:1vw;
+#firstButton {
+    top: 1vw;
     left: 8vw;
 }
-.myButton i{
+
+.myButton i {
     display: inline-block;
-    margin-left: 1.8vw;
+    margin-left: 3.8vw;
+    
+    
 }
 
-.myButton:hover{
-     background: linear-gradient(to right, #098fcb, #26e3cd);
+.myButton:hover {
+    background: linear-gradient(to right, #098fcb, #26e3cd);
 }
 
-.myButton:hover i{
-    color:#3e3e4b;
-     
+.myButton:hover i {
+    color: #3e3e4b;
+
 }
 
 
@@ -257,7 +280,7 @@ a:active {
     }
     .subMenu {
         margin: 0 1vw;
-        font-size: 16px;
+        font-size: 15.9px;
     }
 
     .downOfPage:nth-child(2) {
@@ -269,8 +292,21 @@ a:active {
     .mediumContainer img:nth-child(3) {
         display: none;
     }
-
-
+    #smartphone{
+        left:20px;
+    }
+    #tablet{
+        display: none;
+    }
+    .smallContainer{
+        margin: 0 9px;
+    }
+    .inSmallContainer{
+        margin:1vw auto;
+    }
+    #firstContainer{
+        margin-right: -40px;
+    }
 }
 
 
@@ -302,7 +338,7 @@ a:active {
     #clear {
         display: none;
     }
-    .mediumContainer {
+    .mediumContainer {        
         font-size: 20px;
     }
     .downOfPage:nth-child(2) {
@@ -315,13 +351,58 @@ a:active {
         margin-left: 1vw;
         width: 35px;
         height: 35px;
-
+    }
+     .subMenu {
+        margin: 0 1vw;
+        font-size: 15.8px;
     }
 
 
+    .mediumContainer {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .smallContainer{
+        width: 85%;
+        margin: 30px auto;
+        display: block            
+    }
+    
+    .inSmallContainer,.myButton{
+       float:left;
+    }
+    
+    .inSmallContainer{
+        margin-left: 20px;
+    width:25vw;
+    height: 25vw;
+    }
+    
+    .inSmallContainer img{
+    width:25vw;
+    height: 25vw;
+    }
+    
+    
+    
+    #smartphone{
+       display: none;
+    }
+   
+    
+    
+    #firstContainer{
+        margin-right: -40px;
+    }
+    
+    
 
 
 }
+
+
+
+
 
 
 
