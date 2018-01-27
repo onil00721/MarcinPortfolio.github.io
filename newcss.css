@@ -132,6 +132,8 @@ a:active {
 .inSmallContainer img {
     width: 15vw;
     height: 15vw;
+    border-radius: 70px;
+    
 }
 
 #contactImg img {
