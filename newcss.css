@@ -4,8 +4,6 @@ body {
     margin: 0;
     min-width: 250px;
     color: #71777c;
-
-
 }
 
 a:link,
@@ -13,9 +11,7 @@ a:visited,
 a:active {
     text-decoration: none;
     color: black;
-
 }
-
 
 #menu1 {
     width: 25%;
@@ -49,7 +45,6 @@ a:active {
     float: right;
     margin: 0 20px;
     font-size: 18px;
-
 }
 
 .mediumContainer {
@@ -75,7 +70,6 @@ a:active {
     position: relative;
     left: 45px;
     bottom: -20px;
-
     margin-left: 30px;
     margin-bottom: 40px;
     display: inline-block;
@@ -114,9 +108,7 @@ a:active {
     display: inline-block;
     margin: 0 15px;
     font-size: 2vw;
-    margin-top:30px;
-
-
+    margin-top: 30px;
 }
 
 .inSmallContainer {
@@ -127,36 +119,37 @@ a:active {
     border: 2px solid rgb(237, 232, 232);
     border-radius: 15vw;
     margin-bottom: 20px;
-
 }
 
 .inSmallContainer img {
     width: 15vw;
     height: 15vw;
     border-radius: 70px;
-    
 }
 
 #contactImg img {
     width: 13vw;
     height: 13vw;
 }
+
 #smallTickTackToeImg {
-     background: rgb(242, 242, 242);    
-    border: 0;    
+    background: rgb(242, 242, 242);
+    border: 0;
 }
 
-#techniques img{
+#techniques img {
     width: 14vw;
     height: 14vw;
 }
-#techniques2 img{
+
+#techniques2 img {
     width: 11vw;
     height: 12vw;
     margin-top: 2.2vw;
     border-radius: 0;
 }
-#bootstrap img{
+
+#bootstrap img {
     width: 13vw;
     height: 14vw;
 }
@@ -168,7 +161,6 @@ a:active {
     margin-right: 5px;
     line-height: 3vw;
     margin-top: 10px;
-
 }
 
 .myButton {
@@ -197,8 +189,6 @@ a:active {
 .myButton i {
     display: inline-block;
     margin-left: 1.7vw;
-
-
 }
 
 .myButton:hover {
@@ -207,26 +197,22 @@ a:active {
 
 .myButton:hover i {
     color: #3e3e4b;
+}
+
+#contact {
+    width: 25vw;
+    height: 25vw;
 
 }
 
+#contact img {
+    margin: -0.5vw -1vw;
+    width: 16vw;
+    height: 16vw;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*<--------------------------Down Container---------------------------->*/
 
 #downContainer {
     margin-top: 200px;
@@ -243,7 +229,6 @@ a:active {
     margin-left: auto;
     margin-right: auto;
     height: 75px;
-
 }
 
 .downOfPage:nth-child(2) {
@@ -254,12 +239,11 @@ a:active {
 .downOfPage:last-child {
     font-size: 50px;
     color: aliceblue;
-
 }
 
 .downOfPage:last-child:hover {
     font-size: 50px;
-    color: #48cfad;
+    Ś color: #48cfad;
     cursor: pointer;
 }
 
@@ -268,37 +252,18 @@ a:active {
     margin-left: 25px;
     width: 50px;
     height: 50px;
-
 }
 
+/*<--------------------------RENSPONSIV---------------------------->*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*<--------------------------XXL------------------------------>*/
 
 @media(max-width:1240px) {
     #menu2 {
         margin-right: 3vw;
         margin-left: 0;
         width: 73%;
-        background: blue;
+        ackground: blue;
     }
     #menu1 {
         width: 15%;
@@ -325,7 +290,7 @@ a:active {
         display: none;
     }
     .smallContainer {
-        margin: 30px 9px  0 0;
+        margin: 30px 9px 0 0;
     }
     .inSmallContainer {
         margin: 1vw auto;
@@ -333,31 +298,27 @@ a:active {
     #firstContainer {
         margin-right: -40px;
     }
-    #techniques2 img{
-    width: 11vw;
-    height: 12vw;
-    margin-top: 2.2vw;
-    border-radius: 0;
-}
-    #bootstrap img{
-        width:20vw;
+    #techniques2 img {
+        width: 11vw;
+        height: 12vw;
+        margin-top: 2.2vw;
+        border-radius: 0;
+    }
+    #bootstrap img {
+        width: 20vw;
         height: 20vw;
-        margin: -2vw 0 0 -2vw ;
+        margin: -2vw 0 0 -2vw;
     }
 
-
-    
-    
 }
 
-
-
+/*<----------------------   L   --------------------------->*/
 
 @media(max-width:768px) {
     #menu2 {
         margin-left: auto;
         width: 76%;
-        background: yellow;
+        ackground: yellow;
     }
     .subMenu {
         margin: 0 0.1vw;
@@ -456,31 +417,39 @@ a:active {
     .myButton i {
         display: none;
     }
-    
-    #techniques img{
-    width: 22vw;
-    height: 22vw;
-    margin-top: 0px;
-}
-#techniques2 img{
-    width: 18vw;
-    height: 19vw;
-    margin-top: 3.8vw;
-    border-radius: 0;
-}
-     #bootstrap img{
-        width:29vw;
+
+    #techniques img {
+        width: 22vw;
+        height: 22vw;
+        margin-top: 0px;
+    }
+    #techniques2 img {
+        width: 18vw;
+        height: 19vw;
+        margin-top: 3.8vw;
+        border-radius: 0;
+    }
+    #bootstrap img {
+        width: 29vw;
         height: 29vw;
-        margin: -0.8vw 0 0 -2vw ;
+        margin: -0.8vw 0 0 -2vw;
     }
 
+    #contact {
+        line-height: 10vw;
+        width: 80vw;
+        height: 30vw;
+        font-size: 4vw;
+    }
+    #contact img {
+        width: 26vw;
+        height: 26vw;
+    }
+
+
 }
 
-
-
-
-
-
+/*<-------------------------   S    ---------------------------->*/
 
 @media(max-width:320px) {
     #menu2 {
@@ -513,11 +482,13 @@ a:active {
         height: 35px;
     }
     .smallContainer {
-       font-size: 5vw;
+        font-size: 5vw;
         line-height: 15vw;
     }
-    
-    
-
+#contact {
+        line-height: 10vw;
+        
+        font-size: 3.9vw;
+    }
 
 }
