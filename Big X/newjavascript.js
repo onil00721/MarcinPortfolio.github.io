@@ -21,6 +21,7 @@ function szukajPionowo(t) {
                 l++;
                 if (l == 5) { //zwraca informacje o numerach zwycięzkich pól 
                     jakiZnak = null;
+                    zwyciezkieKratki("#" + tab2[0], "#" + tab2[1], "#" + tab2[2], "#" + tab2[3], "#" + tab2[4]);
                     if (t == 1000) {
                         $("#zwyciezca").html("<p>Zwycięzcą jest X !!!!! Gratulacje</p>");
                     } else {
@@ -48,6 +49,7 @@ function szukajPoziomo(t) {
                 q++;
                 if (q == 5) { //zwraca informacje o numerach zwycięzkich pól w poziomie         
                     jakiZnak = null;
+                    zwyciezkieKratki("#" + tab3[0], "#" + tab3[1], "#" + tab3[2], "#" + tab3[3], "#" + tab3[4]);
                     if (t == 1000) {
                         $("#zwyciezca").html("<p>Zwycięzcą jest X !!!!! Gratulacje</p>");
                     } else {
@@ -77,6 +79,7 @@ function szukajUkosP(t) {
                 b++;
                 if (b == 5) { //zwraca informacje o numerach zwycięzkich pól 
                     jakiZnak = null;
+                    zwyciezkieKratki("#" + tab4[0], "#" + tab4[1], "#" + tab4[2], "#" + tab4[3], "#" + tab4[4]);
                     if (t == 1000) {
                         $("#zwyciezca").html("<p>Zwycięzcą jest X !!!!! Gratulacje</p>");
                     } else {
@@ -105,6 +108,7 @@ function szukajUkosL(t) {
                 g++;
                 if (g == 5) { //zwraca informacje o numerach zwycięzkich pól 
                     jakiZnak = null;
+                    zwyciezkieKratki("#" + tab5[0], "#" + tab5[1], "#" + tab5[2], "#" + tab5[3], "#" + tab5[4]);
                     if (t == 1000) {
                         $("#zwyciezca").html("<p>Zwycięzcą jest X !!!!! Gratulacje</p>");
                     } else {
@@ -116,6 +120,24 @@ function szukajUkosL(t) {
     }
 }
 
+
+function zwyciezkieKratki(f, g, n, s, p) {
+    $(f).animate({
+        backgroundColor: "#b5bdc9"
+    });
+    $(g).animate({
+        backgroundColor: "#b5bdc9"
+    });
+    $(n).animate({
+        backgroundColor: "#b5bdc9"
+    });
+    $(s).animate({
+        backgroundColor: "#b5bdc9"
+    });
+    $(p).animate({
+        backgroundColor: "#b5bdc9"
+    });
+};
 
 
 function znak() { //tutaj jest odczytywany numer kratki i wstawiany odpowiedni znak (X lub O ) oraz dodawana w miejsce znaku wartość (1=O lub X=10)
@@ -148,6 +170,10 @@ function znak() { //tutaj jest odczytywany numer kratki i wstawiany odpowiedni z
             szukajUkosP(500);
             szukajUkosL(500);
         } else {
+
+
+
+
             console.log("Tu powinien być koniec gry");
         }
     });
