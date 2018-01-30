@@ -27,18 +27,13 @@ var koniecKmunuikatu = false; //jeśli true to blokuje wlyświetlanie aktualnego
 function myFun() { //funkcja wstawiająca odpowiedni znak do kratki
 
     if (znak == false) {
-       
-        $(nrKratki).html('<i class=" icon-circle-empty" style="opacity: 1;"></i>'); // wstawia kółko O   
-        $(nrKratki).animate({color: "blue"});
-        
+        $(nrKratki).html('<i class=" icon-circle-empty" style="opacity: 1;"></i>'); // wstawia kółko O  
         znak = true;
-
     } else {
         $(nrKratki).html('<i class="icon-cancel" style="opacity: 1;"></i>'); // wstawia X
         znak = false;
     }
 }
-
 
 function jakiZnak() { //Wzraca wartość czy O czy X  
     var htmlString = $(nrKratki).html();
@@ -363,8 +358,5 @@ function boot() {
         ktoWygral();
         remis();
     }
-
-
-
 
 }
