@@ -1,6 +1,6 @@
 var jakiZnak = false; // false = O true = X
 
-var tab = []; //ot taka tablica na samym początku 
+var tab = []; //ot taka tablica na samym początku---pomocnicza
 var tab2 = []; //tablica zawierająca numery zwycięzkich indeksów
 var tab3 = []; //tablica zawierająca numery zwycięzkich indeksów
 var tab4 = []; //tablica zawierająca numery zwycięzkich indeksów
@@ -20,15 +20,12 @@ function szukajPionowo(t) {
                 h++;
                 l++;
                 if (l == 5) { //zwraca informacje o numerach zwycięzkich pól 
-                    console.log("hit 2 ");
+                    jakiZnak = null;
                     if (t == 1000) {
-                        console.log("Wygrywa X")
                         $("#zwyciezca").html("<p>Zwycięzcą jest X !!!!! Gratulacje</p>");
                     } else {
-                        console.log("Wygrywa O");
                         $("#zwyciezca").html("<p>Zwycięzcą jest O !!!!! Gratulacje</p>");
                     }
-                    console.log(tab2);
                 }
             }
         }
@@ -45,19 +42,15 @@ function szukajPoziomo(t) {
             m += 16;
         }
         for (var v = o; v < 6 + o; v++) {
-
             if (tab[v] == t) {
                 tab3[w] = v;
                 w++;
                 q++;
-                if (q == 5) { //zwraca informacje o numerach zwycięzkich pól w poziomie          
-                    console.log("hit 3 ");
-                    console.log(tab3);
+                if (q == 5) { //zwraca informacje o numerach zwycięzkich pól w poziomie         
+                    jakiZnak = null;
                     if (t == 1000) {
-                        console.log("Wygrywa X")
                         $("#zwyciezca").html("<p>Zwycięzcą jest X !!!!! Gratulacje</p>");
                     } else {
-                        console.log("Wygrywa O");
                         $("#zwyciezca").html("<p>Zwycięzcą jest O !!!!! Gratulacje</p>");
                     }
 
@@ -83,13 +76,10 @@ function szukajUkosP(t) {
                 c++;
                 b++;
                 if (b == 5) { //zwraca informacje o numerach zwycięzkich pól 
-                    console.log("hit 4");
-                    console.log(tab4);
+                    jakiZnak = null;
                     if (t == 1000) {
-                        console.log("Wygrywa X")
                         $("#zwyciezca").html("<p>Zwycięzcą jest X !!!!! Gratulacje</p>");
                     } else {
-                        console.log("Wygrywa O");
                         $("#zwyciezca").html("<p>Zwycięzcą jest O !!!!! Gratulacje</p>");
                     }
                 }
@@ -114,13 +104,10 @@ function szukajUkosL(t) {
                 n++;
                 g++;
                 if (g == 5) { //zwraca informacje o numerach zwycięzkich pól 
-                    console.log("hit 5 ");
-                    console.log(tab5);
+                    jakiZnak = null;
                     if (t == 1000) {
-                        console.log("Wygrywa X")
                         $("#zwyciezca").html("<p>Zwycięzcą jest X !!!!! Gratulacje</p>");
                     } else {
-                        console.log("Wygrywa O");
                         $("#zwyciezca").html("<p>Zwycięzcą jest O !!!!! Gratulacje</p>");
                     }
                 }
@@ -134,40 +121,34 @@ function szukajUkosL(t) {
 function znak() { //tutaj jest odczytywany numer kratki i wstawiany odpowiedni znak (X lub O ) oraz dodawana w miejsce znaku wartość (1=O lub X=10)
     $("p").click(function () {
         var htmlString = $(this).html();
-        if (htmlString) {
-            if (jakiZnak == false) {
-                $("#" + htmlString).html("<p>X</p>");
-                $("#" + htmlString + " " + "p").animate({
-                    "opacity": "1",
-                    "font-size": "100%"
-                }, 1000);
-                jakiZnak = true;
-                var d = 0;
-                tab[htmlString] = d + 1000; //dodawanie liczby do tablicy             
-                szukajPionowo(1000);
-                szukajPoziomo(1000);
-                szukajUkosP(1000);
-                szukajUkosL(1000);
-            } else {
-                $("#" + htmlString).html("<p>O</p>");
-                 $("#" + htmlString + " " + "p").animate({
-                    "opacity": "1",
-                    "font-size": "100%"
-                },1000);
-                
-                
-                /*$("#" + htmlString + " " + "p").css({
-                    "opacity": "1",
-                    "font-size": "100%"
-                });*/
-                jakiZnak = false;
-                var d = 0;
-                tab[htmlString] = d + 500; //dodawanie liczby do tablicy              
-                szukajPionowo(500);
-                szukajPoziomo(500);
-                szukajUkosP(500);
-                szukajUkosL(500);
-            }
+        if (jakiZnak == false) {
+            $("#" + htmlString).html("<p>X</p>");
+            $("#" + htmlString + " " + "p").animate({
+                "opacity": "1",
+                "font-size": "100%"
+            }, 1000);
+            jakiZnak = true;
+            var d = 0;
+            tab[htmlString] = d + 1000; //dodawanie liczby do tablicy             
+            szukajPionowo(1000);
+            szukajPoziomo(1000);
+            szukajUkosP(1000);
+            szukajUkosL(1000);
+        } else if (jakiZnak == true) {
+            $("#" + htmlString).html("<p>O</p>");
+            $("#" + htmlString + " " + "p").animate({
+                "opacity": "1",
+                "font-size": "100%"
+            }, 1000);
+            jakiZnak = false;
+            var d = 0;
+            tab[htmlString] = d + 500; //dodawanie liczby do tablicy              
+            szukajPionowo(500);
+            szukajPoziomo(500);
+            szukajUkosP(500);
+            szukajUkosL(500);
+        } else {
+            console.log("Tu powinien być koniec gry");
         }
     });
 }
