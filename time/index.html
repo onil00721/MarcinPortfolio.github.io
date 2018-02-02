@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stleScss.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="css/fontello.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+<body onload="myFunction()">
+    <header>
+        <nav>
+            <div id="menu"></div>
+
+        </nav>
+
+    </header>
+    <nav>
+        <div id="buttonOpen">
+            <span id="OpenMenu" onclick="openLeftMenu()">&#9776; O P E N</span>
+        </div>
+        <div id="leftMenu" class="styleLeftMenu">
+            <a class="closebtn" onclick="closeLeftMenu()">&times;</a>
+            <p>Menu</p>
+            <p>Topic</p>
+            <p>Statistic</p>
+            <p>Contact </p>
+            <p>Maps</p>
+        </div>
+        <script>
+            function closeLeftMenu() {
+                document.getElementById("leftMenu").style.width = "0px";
+            }
+
+            function openLeftMenu() {
+                document.getElementById("leftMenu").style.width = "400px";
+            }
+        </script>
+    </nav>
+    <main>
+        <article>
+            <section>
+                <div class="paragraph">
+                    <h1>Aktualny czas w Polsce</h1>
+                </div>
+                <div id="time">17.10.48</div>
+                <div class="paragraph">czwartek, 1 lutego 2018, tydień 5</div>
+                <div class="paragraph">
+                    <div class="box">
+                        <p>Los Angeles</p>
+                        <div id="LA">
+                            <p>12.26</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <p>New York</p>
+                        <div id="NY">
+                            <p>11.16</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <p>Londyn</p>
+                        <div id="LO">
+                            <p>16.16</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <p>Paryż</p>
+                       <div id="PA">
+                        <p>17.17</p>
+                    </div></div>
+                    <div class="box">
+                        <p>Moskwa</p>
+                        <div id="MS">
+                            <p>19.17</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <p>Pekin</p>
+                        <div id="PE">
+                            <p>00.17</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <p>Tokio</p>
+                        <div id="TK">
+                            <p>1.18</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </section>
+            <div id="littleBreak"></div>
+            <section>
+                <div id="secondScreen">
+                    <div class="paragraph2">
+                        <div class="box">
+                            <p>Amsterdam</p>
+                        </div>
+                        <div class="box">
+                            <p>Antalya</p>
+                        </div>
+                        <div class="box">
+                            <p>Bagdad</p>
+                        </div>
+                        <div class="box">
+                            <p>Bangkok</p>
+                        </div>
+                        <div class="box">
+                            <p>Barcelona</p>
+                        </div>
+                        <div class="box">
+                            <p>Bogota</p>
+                        </div>
+                    </div>
+                    <div class="paragraph2">
+                        <div class="box">
+                            <p>Bakczysaraj</p>
+                        </div>
+                        <div class="box">
+                            <p>Bruksela</p>
+                        </div>
+                        <div class="box">
+                            <p>Chickago</p>
+                        </div>
+                        <div class="box">
+                            <p>Delhi</p>
+                        </div>
+                        <div class="box">
+                            <p>Dhaka</p>
+                        </div>
+                        <div class="box">
+                            <p>Dubaj</p>
+                        </div>
+                    </div>
+                    <div class="paragraph2">
+                        <div class="box">
+                            <p>Dżakarta</p>
+                        </div>
+                        <div class="box">
+                            <p>Helsinki</p>
+                        </div>
+                        <div class="box">
+                            <p>Honkog</p>
+                        </div>
+                        <div class="box">
+                            <p>Honolulu</p>
+                        </div>
+                        <div class="box">
+                            <p>Istambuł</p>
+                        </div>
+                        <div class="box">
+                            <p>Amsterdam</p>
+                        </div>
+                    </div>
+                    <div class="paragraph2">
+                        <div class="box">
+                            <p>Kair</p>
+                        </div>
+                        <div class="box">
+                            <p>Kanton</p>
+                        </div>
+                        <div class="box">
+                            <p>Karaczi</p>
+                        </div>
+                        <div class="box">
+                            <p>Kinszasa</p>
+                        </div>
+                        <div class="box">
+                            <p>Kuala Lumpur</p>
+                        </div>
+                        <div class="box">
+                            <p>Lagos</p>
+                        </div>
+                    </div>
+                    <div class="paragraph2">
+                        <div class="box">
+                            <p>Las Vegas</p>
+                        </div>
+                        <div class="box">
+                            <p>Lima</p>
+                        </div>
+                        <div class="box">
+                            <p>Londyn</p>
+                        </div>
+                        <div class="box">
+                            <p>Los Angeles</p>
+                        </div>
+                        <div class="box">
+                            <p>Manila</p>
+                        </div>
+                        <div class="box">
+                            <p>Mediolan</p>
+                        </div>
+                    </div>
+                    <div class="paragraph2">
+                        <div class="box">
+                            <p>Mekka</p>
+                        </div>
+                        <div class="box">
+                            <p>Meksyk</p>
+                        </div>
+                        <div class="box">
+                            <p>Miami</p>
+                        </div>
+                        <div class="box">
+                            <p>Moskwa</p>
+                        </div>
+                        <div class="box">
+                            <p>Mumbaj</p>
+                        </div>
+                        <div class="box">
+                            <p>New Jork</p>
+                        </div>
+                    </div>
+                    <div class="paragraph2">
+                        <div class="box">
+                            <p>Osaka </p>
+                        </div>
+                        <div class="box">
+                            <p>Oslo</p>
+                        </div>
+                        <div class="box">
+                            <p>Paryż</p>
+                        </div>
+                        <div class="box">
+                            <p>Pekin</p>
+                        </div>
+                        <div class="box">
+                            <p>Praga</p>
+                        </div>
+                        <div class="box">
+                            <p>Rangun</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+
+                <div class="paragraph2">
+                    " Nie otrzymujemy krótkiego życia, <br> lecz je takim czynimy. <br>Nie brakuje nam czasu, lecz trwonimy go."
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <fotter>
+        <div class="paragraph">
+            <p></p>
+        </div>
+    </fotter>
+    <script src="newjavascript.js" type="text/javascript"></script>
+</body>
+</html>

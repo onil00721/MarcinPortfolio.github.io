@@ -1,0 +1,121 @@
+body {
+    background: #e4d1ff;
+    color: rgb(145, 0, 188);
+    transition: background-color .5s;
+    height: 1000px;
+    min-width: 630px;
+}
+
+.styleLeftMenu {
+    width: 0;
+    height: 800px;
+    background: black;
+    color: whitesmoke;
+    font-size: 25px;
+    text-align: center;
+    padding: 50px 0;
+    margin-left: -50px;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    position: fixed;
+}
+
+#OpenMenu {
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    display: block;
+    width: 20px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+
+#buttonOpen {
+    margin-top: 50px;
+    margin-left: -10px;
+    background: black;
+    border-radius: 0 20px 20px 0;
+    width: 40px;
+    padding: 10px 0;
+    position: fixed;
+}
+
+.closebtn {
+    font-size: 60px;
+    cursor: pointer;
+    margin-right: -230px;
+}
+
+#time {
+    margin-left: 7vw;
+    font-size: 23vw;
+}
+
+.paragraph {
+    font-size: 3vw;
+    float: right;
+     margin-right: 2vw;
+}
+
+.paragraph h1 {
+    font-size: 3.5vw;
+    margin-right: 30vw;
+    width: 700px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.paragraph2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.paragraph2 .box {
+    background: #492f6f;
+    border-radius: 40px;
+    color: #ffa39f;
+}
+
+#secondScreen {
+    background: #4d3274;
+}
+
+.box {
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    background: #d4b6ff;
+    margin-left: 10px;
+}
+
+.box p {
+    margin: 0;
+    font-size: 2vw;
+}
+
+#littleBreak {
+    width: 1250px;
+    height: 250px; //background: green;
+}
+
+
+@media (max-width:1120px) {
+    .paragraph h1 {
+        margin-right: 0;
+    }
+}
+
+@media (max-width:770px) {
+    .paragraph h1 {
+        margin-right: -200px;
+    }
+}
