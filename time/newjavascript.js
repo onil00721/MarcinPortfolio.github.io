@@ -10,6 +10,13 @@ function myTimer() {
 }
 
 
+var dniTygodnia = [];
+dniTygodnia = ['Niedziela', 'Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota'];
+
+var dniMiesiąca = [];
+dniMiesiąca = ['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień'];
+
+//Wtorek','Środa','Czwartek','Piątek','Sobota','Niedziela'
 
 
 function myTimer() {
@@ -26,6 +33,11 @@ function myTimer() {
     var PE = d.getHours() + 8;
     var TK = d.getHours() + 9;
 
+    var DAY = d.getDay();
+    var dayOfMonnth = d.getDate();
+    var MonntH = d.getMonth();
+    var Year = d.getFullYear();
+
 
 
     $("#time").html('<div id="time">' + t + '</div>');
@@ -36,4 +48,6 @@ function myTimer() {
     $("#MS").html('<div><p>' + MS + ":" + m + '</p></div>');
     $("#PE").html('<div><p>' + PE + ":" + m + '</p></div>');
     $("#TK").html('<div><p>' + TK + ":" + m + '</p></div>');
+    $("#DAY").html('<div><p>' + dniTygodnia[DAY] + "," + dayOfMonnth + " " + dniMiesiąca[MonntH] + " " +
+        +Year + '</p></div>');
 }
